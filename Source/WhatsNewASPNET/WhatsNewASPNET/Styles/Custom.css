@@ -1,0 +1,77 @@
+﻿ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /*width:768px;*/
+}
+
+li
+{
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    float: left;
+}
+
+div.images ul li img
+{
+    padding-top: 50px;
+    padding-right: 15px;
+    width: 150px;
+    display: inline;
+}
+
+#map
+{
+    position:absolute;
+    top: 80%;
+    left: 50%;
+    width: 500px;
+    height: 300px;
+    margin-left: -400px;
+    margin-top: -300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tr13
+{
+    background: url(/images/alert-overlay.png) repeat-x;
+    background-color: rgba(75, 108, 158, 0.78);
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border-bottom: 1px solid #222;
+    position: relative;
+    cursor: pointer;
+}
