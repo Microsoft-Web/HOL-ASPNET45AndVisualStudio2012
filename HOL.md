@@ -61,7 +61,7 @@ In this task, you will discover the new features of the CSS Editor. This new edi
 
 1. Start **Visual Studio** and open the **WhatsNewASPNET.sln** solution located in the **Source\WhatsNewASPNET** folder of this lab.
 
-1. In Solution Explorer, open the **Site.css** file located under the **Styles** folder. Make sure the **Text Editor** tools are visible on the toolbar. To do that, select the **View** |**Toolbars** menu option, and check the **Text Editor** options. You will notice that, since this new version, the **Comment** button (![comment-button](images/comment-button.png?raw=true)) and the **Uncomment** button (![uncomment-button](images/uncomment-button.png?raw=true)) are also enabled for the CSS editor.
+1. In Solution Explorer, open the **Site.css** file located under the **Styles** folder. Make sure the **Text Editor** tools are visible on the toolbar. To do that, select the **View** | **Toolbars** menu option, and check the **Text Editor** options. You will notice that, since this new version, the **Comment** button (![comment-button](images/comment-button.png?raw=true)) and the **Uncomment** button (![uncomment-button](images/uncomment-button.png?raw=true)) are also enabled for the CSS editor.
 
  	![Enabling Editor and CCS Tools](./images/Enabling-Editor-and-CCS-Tools.png?raw=true "Enabling Editor and CCS Tools")
  
@@ -75,7 +75,7 @@ In this task, you will discover the new features of the CSS Editor. This new edi
  
 	_Collapsing CSS classes_
 
-1. Make sure that the smart indentation feature is enabled. Select the **Tools** | **Options** menu option, and then select the **Text Editor** |**CSS** | **Formatting** page in the left pane of the screen. Check the **Hierarchical indentation** option.
+1. Make sure that the smart indentation feature is enabled. Select the **Tools** | **Options** menu option, and then select the **Text Editor** | **CSS** | **Formatting** page in the left pane of the screen. Check the **Hierarchical indentation** option.
 
  	![Enabling hierarchical indentation](./images/Enabling-hierarchical-indentation.png?raw=true "Enabling hierarchical indentation")
  
