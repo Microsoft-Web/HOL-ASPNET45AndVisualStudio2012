@@ -83,7 +83,7 @@ In this task, you will discover the new features of the CSS Editor. This new edi
 
 1. Locate the main class definition (.main) and append a style to the div elements. You will notice that the code aligns automatically, helping users to find the parent classes at a glance.
 
-	````
+	````CSS
 	.main
 	{
 	  padding: 0px 12px;
