@@ -494,7 +494,7 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 
 	You can check out the " **use strict** " direction in the first line of the file, which enables ECMAScript5 **strict mode**. This mode consists in a subset of the language that clarifies ambiguities from the past edition, and adds some new features, such as getters and setters, library support for JSON, and more complete reflection on object properties.
 
-1. Open the **Error List** if not already opened (View menu | **Error List**)**. Notice the **function** declaration is underlined. This is because in ECMA5 standard functions cannot be nested inside language structures. In the error list below you will see the warning details.
+1. Open the **Error List** if not already opened (View menu | **Error List**). Notice the **function** declaration is underlined. This is because in ECMA5 standard functions cannot be nested inside language structures. In the error list below you will see the warning details.
 
  	![JavaScript validation error message](./images/JavaScript-validation-error-message.png?raw=true "JavaScript validation error message")
  
