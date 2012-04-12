@@ -83,7 +83,7 @@ In this task, you will discover the new features of the CSS Editor. This new edi
 
 1. Locate the main class definition (.main) and append a style to the div elements. You will notice that the code aligns automatically, helping users to find the parent classes at a glance.
 
-	````CSS
+	````
 	CSS
 	.main
 	{
@@ -151,7 +151,7 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 
 1. Apply the same **border** snippets in the page style (.page).
 
-	````CSS
+	````
 	CSS
 	.page
 	{
@@ -186,7 +186,7 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 
 1. Create a new class **div.images ul li img:hover** below the **div.images ul li img** class definition and place the cursor inside the brackets**.**
 
-	````CSS
+	````
 	CSS
 	div.images ul li img
 	{
@@ -201,7 +201,7 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 
 1. Type **transform** and press the TAB key twice in order to insert the transform snippet. Then, enter **15** to change the rotation angle value when images are hovered.
 
-	````CSS
+	````
 	CSS
 	div.images ul li img
 	{
@@ -261,7 +261,7 @@ In this task, you will change the DOCTYPE of a page to see how the HTML editor b
 
 1. Undo the changes to the DOCTYPE definition, setting the value to HTML5.
 
-	````HTML
+	````
 	HTML
 	<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Web11.SiteMaster" %>
 	
@@ -282,7 +282,7 @@ Visual Studio now updates the HTML opening or closing tags of the element that y
 
 1. On the **Default.aspx** page, add an **H3** element with a title (for example, Web11 Rocks!).
 
-	````HTML
+	````
 	HTML
 	<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 	  <br />
@@ -315,7 +315,7 @@ Visual Studio now includes several HTML5code snippets. In this task, you will us
 
 1. Update the audio source to point to an existing audio file.
 
-	````HTML
+	````
 	HTML
 	<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 	  <br />
@@ -441,7 +441,7 @@ This task will introduce you to some of the new JavaScript editor features, whic
 
 	The following code uses HTML5 local storage to store a _pageLoadCount_ variable that stores the number of times the page has been visited by the current user. Local Storage is a client-side key-value database introduced with the HTML5 standard. The data is saved on the local machine, inside the user's browser.
 
-	````HTML
+	````
 	HTML
 	<script>
 	  addCount(1);
@@ -490,7 +490,7 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 
 1. Open **ECMA5script5.js** located under the **Scripts\custom** project folder. You will now test validation for ECMAScript5 standard.
 
-	````JavaScript
+	````
 	JavaScript
 	"use strict";
 	
@@ -533,7 +533,7 @@ In this task, you will explore Visual Studio features for XML documentation in J
 
 1. In the **test** function, call the **multiply** function that receives two parameters. Notice the tooltip box is showing the **multiply** function documentation.
 
-	````JavaScript
+	````
 	JavaScript
 	function test() {
 	  multiply(
@@ -611,7 +611,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 	Notice that the new **Microsoft.Web.Optimization** namespace is commented out at the beginning of the file. Uncomment the using directive to include the bundling and minification features.
 
-	````C#
+	````
 	C#
 	using System;
 	using System.Collections.Generic;
@@ -626,7 +626,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 	In this method, you are enabling the default bundling. This enables us to reference a bundled collection of CSS files in a folder by using the path to that folder, plus the "CSS" or the "JS" suffix.
 
-	````C#
+	````
 	C#
 	void Application_Start(object sender, EventArgs e)
 	{
@@ -642,7 +642,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 	Notice the CSS files and the JS files are have a single referenced tag.
 
-	````HTML
+	````
 	HTML
 	<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 	  <link href="**Styles/CSS**" rel="stylesheet" type="text/css" />
@@ -656,7 +656,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 	You can use the path **Scripts/{custom}/JS** as shown below to bundle and minify all the JS files inside a **Scripts/{custom}** folder. This is the default behavior with the default bundles.
 
-	````HTML
+	````
 	HTML
 	<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 	  <ul>
@@ -711,7 +711,7 @@ In this task, you will configure a static bundle to define a specific set of fil
 
 	Notice that the files are not located in the same place; this is another advantage over the default bundling.
 
-	````C#
+	````
 	C#
 	void Application_Start(object sender, EventArgs e)
 	{
@@ -740,7 +740,7 @@ In this task, you will configure a static bundle to define a specific set of fil
 
 	Notice that the link to **Static JS Bundle** is using the path you have declared when you configured the static bundle in the Global.asax.cs file: **/StaticBundle**.
 
-	````HTML
+	````
 	HTML
 	<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 	  <ul>
@@ -785,7 +785,7 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 
 	You are defining a dynamic folder bundle that will use the **CoffeeMinify** custom minification processor that will only apply to the files with the "**.coffee**" extension (CoffeeScript files). Notice that you can use a search pattern to select the files to bundle within a folder, like '*.coffee'.
 
-	````C#
+	````
 	C#
 	void Application_Start(object sender, EventArgs e)
 	{
@@ -820,7 +820,7 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 
 	This class inherits from JsMinify to minify the JavaScript code. Notice that it is incomplete; ideally, you will call the CoffeeScript compiler to generate the JavaScript code first, and then you will send it to the JsMinify.Process method to minify the resulting code.
 
-	````C#
+	````
 	C#
 	public class CoffeeMinify : JsMinify
 	{
@@ -853,7 +853,7 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 
 	Notice that the link to **Dynamic JS Bundle** is referencing the **Scripts/bundle** folder by using the **/Coffee** suffix you configured for the dynamic folder bundle.
 
-	````HTML
+	````
 	HTML
 	<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 	  <ul>
