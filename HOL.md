@@ -867,16 +867,6 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 
 <a name="summary" />
 ## Summary ##
+This lab helps you to understand what New in ASP.NET and Web Development in Visual Studio 11 is and how to take advantage of the variety of enhancements in Visual Studio 11. 
 
-Taking advantage of the new version Visual Studio, no matter the size or complexity of your web application, Visual Studio 11 can help you turn your ideas become ture. 
-
-By completing this hands-on lab you have learned how to:
-
-- Use the new features and improvements in the CSS editor
-- Use the new features and improvements in the HTML editor
-- Use the new features and improvements in the JavaScript editor
-- Configure and use bundling and minification
-
-As you have discovered while going through the lab, the experiences, features and performance of Web-technology development has been improved and enhanced to a new level,much easier, much smooth and much comfortable.
-	
-We hope that the programming skills you learned in this and the other identity labs will enable you to write solutions with the confidence that no matter where your application will end up being deployed, you took care of identity in consistent and effective manner.
+By completing this Hands-On Lab, you have learnt how to use the new features and improvements in Visual Studio 2011 Editors for CSS, JavaScript and HTML. In addition, you have learnt how Visual Studio 2011 implements built-in bundling and minification.
