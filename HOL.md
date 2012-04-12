@@ -420,7 +420,7 @@ In this exercise, you will learn some of the new features and improvements of Ja
 
 This task will introduce you to some of the new JavaScript editor features, which focus on organizing your code and bringing a better user experience.
 
-1. If not already opened, start **Visual Studio** and open the **WhatsNewASPNET.sln** solution located in the **Source \ WhatsNewASPNET** folder of this lab.
+1. If not already opened, start **Visual Studio** and open the **WhatsNewASPNET.sln** solution located in the **Source\WhatsNewASPNET** folder of this lab.
 
 1. Press **F5** to run the application, then click the JavaScript link in the navigation bar. Refresh the page several times and check how the counter increments.
 
@@ -430,7 +430,7 @@ This task will introduce you to some of the new JavaScript editor features, whic
 
 1. Close the browser and go back to Visual Studio.
 
-1. Open the JavaScript.aspx page and locate the **\<script>** block ( shown below ).
+1. Open the JavaScript.aspx page and locate the **\<script>** block (shown below).
 
 	The following code uses HTML5 local storage to store a _pageLoadCount_ variable that stores the number of times the page has been visited by the current user. Local Storage is a client-side key-value database introduced with the HTML5 standard. The data is saved on the local machine, inside the user's browser.
 
@@ -461,13 +461,13 @@ This task will introduce you to some of the new JavaScript editor features, whic
  
 	_HTML5 JavaScript features in JavaScript_
 
-1. Click any opening bracket ( **{** ) from the scripting code and notice that the brackets are highlighted.
+1. Click any opening bracket (**{**) from the scripting code and notice that the brackets are highlighted.
 
  	![Brackets are highlighted](./images/Brackets-are-highlighted.png?raw=true "Brackets are highlighted")
  
 	_Brackets are highlighted_
 
-1. Uncomment the function **testAutoAlign()** ( you can use CTRL+K;CTRL+U ) and locate the cursor inside the function code. Press enter to append a second line. Notice that the code is now **aligned** and **auto-indented**.
+1. Uncomment the function **testAutoAlign()** (you can use CTRL+K;CTRL+U) and locate the cursor inside the function code. Press enter to append a second line. Notice that the code is now **aligned** and **auto-indented**.
 
  	![JavaScript code is auto aligned](./images/JavaScript-code-is-auto-aligned.png?raw=true "JavaScript code is auto aligned")
  
@@ -480,7 +480,7 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 
 >**Note:** Visual Studio 2010 implemented ECMAStript3 compliance, while the Visual Studio 11 provides ECMAScript5 compliance.
 
-1. Open **ECMA5script5.js** located under the **Scripts \ custom** project folder. You will now test validation for ECMAScript5 standard.
+1. Open **ECMA5script5.js** located under the **Scripts\custom** project folder. You will now test validation for ECMAScript5 standard.
 
 	````
 	"use strict";
@@ -494,7 +494,7 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 
 	You can check out the " **use strict** " direction in the first line of the file, which enables ECMAScript5 **strict mode**. This mode consists in a subset of the language that clarifies ambiguities from the past edition, and adds some new features, such as getters and setters, library support for JSON, and more complete reflection on object properties.
 
-1. Open the **Error List** if not already opened ( View menu | **Error List** )**. Notice the **function** declaration is underlined. This is because in ECMA5 standard functions cannot be nested inside language structures. In the error list below you will see the warning details.
+1. Open the **Error List** if not already opened (View menu | **Error List**)**. Notice the **function** declaration is underlined. This is because in ECMA5 standard functions cannot be nested inside language structures. In the error list below you will see the warning details.
 
  	![JavaScript validation error message](./images/JavaScript-validation-error-message.png?raw=true "JavaScript validation error message")
  
@@ -502,7 +502,7 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 
 1. Comment out the **"use strict"** direction and notice that errors disappear, but the warnings remain. 
 
-1. In the last line of the file, write any string like **"test"** ( include the quotation marks to indicate it is as string ). Write a period next to the string to display the IntelliSense list, and select the "trim" option.
+1. In the last line of the file, write any string like **"test"** (include the quotation marks to indicate it is as string). Write a period next to the string to display the IntelliSense list, and select the "trim" option.
 
 	In ECMAScript5 standard, string values and variables also have string methods defined, like trim, uppercase, search and replace.
 
@@ -514,7 +514,7 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 
 In this task, you will explore Visual Studio features for XML documentation in JavaScript. You will see the JavaScript IntelliSense list now shows the XML documentation of each function. Additionally, you will discover the navigation feature in JavaScript.
 
-1. Open **XMLDoc.js** file located in **Scripts / custom** project folder. This file contains XML documentation on each of the JavaScript functions.
+1. Open **XMLDoc.js** file located in **Scripts/custom** project folder. This file contains XML documentation on each of the JavaScript functions.
 
  	![JavaScript XML documentation integrated to IntelliSense](./images/JavaScript-XML-documentation-integrated-to-IntelliSense.png?raw=true "JavaScript XML documentation integrated to IntelliSense")
  
@@ -562,7 +562,7 @@ In this task, you will explore Visual Studio features for XML documentation in J
 
 How many times do your websites include more than one JavaScript or CSS file? This is a very common scenario where bundling and minification can help to reduce the file size and make the site perform faster. The new bundling feature in ASP.NET 4.5 packs a set of JS or CSS files into a single element, and reduces its size by minifying the content ( i.e. removing not required blank spaces, removing comments, reducing identifiers ).
 
-Bundling and minification in ASP.NET 4.5 is performed at runtime, so that the process can identify the user agent ( for example IE, Mozilla, etc ) , and thus, improve the compression by targeting the user browser ( for instance, removing stuff that is Mozilla specific when the request comes from IE ).
+Bundling and minification in ASP.NET 4.5 is performed at runtime, so that the process can identify the user agent (for example IE, Mozilla, etc) , and thus, improve the compression by targeting the user browser (for instance, removing stuff that is Mozilla specific when the request comes from IE).
 
 In this exercise, you will learn how to enable and use the different types of bundling and minification in ASP.NET 4.5.
 
@@ -587,9 +587,9 @@ The simplest way to use bundling and minification is to enable the default bundl
 
 In this task, you will learn how to enable and reference the bundled and minified JS and CSS files and view the resulting output.
 
-1. If not already opened, start **Visual Studio** and open the **WhatsNewASPNET.sln** solution located in the **Source \ WhatsNewASPNET** folder of this lab.
+1. If not already opened, start **Visual Studio** and open the **WhatsNewASPNET.sln** solution located in the **Source\WhatsNewASPNET** folder of this lab.
 
-1. In the **Solution Explorer**, expand the **Styles**, **Scripts \ custom** and **Scripts \ bundle** folders.
+1. In the **Solution Explorer**, expand the **Styles**, **Scripts\custom** and **Scripts\bundle** folders.
 
 	Notice that the application is using more than one CSS and JS file.
 
