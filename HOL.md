@@ -482,7 +482,7 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 
 1. Open **ECMA5script5.js** located under the **Scripts\custom** project folder. You will now test validation for ECMAScript5 standard.
 
-	````
+	````JavaScript
 	"use strict";
 	
 	if (true) {
@@ -524,7 +524,7 @@ In this task, you will explore Visual Studio features for XML documentation in J
 
 1. In the **test** function, call the **multiply** function that receives two parameters. Notice the tooltip box is showing the **multiply** function documentation.
 
-	````
+	````JavaScript
 	function test() {
 	  multiply(
 	}
@@ -601,7 +601,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 	Notice that the new **Microsoft.Web.Optimization** namespace is commented out at the beginning of the file. Uncomment the using directive to include the bundling and minification features.
 
-	````
+	````C#
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
@@ -615,7 +615,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 	In this method, you are enabling the default bundling. This enables us to reference a bundled collection of CSS files in a folder by using the path to that folder, plus the "CSS" or the "JS" suffix.
 
-	````
+	````C#
 	void Application_Start(object sender, EventArgs e)
 	{
 	  // Default behavior
@@ -630,7 +630,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 	Notice the CSS files and the JS files are have a single referenced tag.
 
-	````
+	````HTML
 	<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 	  <link href="**Styles/CSS**" rel="stylesheet" type="text/css" />
 	  <script src="**Scripts/custom/JS**"></script>
@@ -643,7 +643,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 	You can use the path **Scripts/{custom}/JS** as shown below to bundle and minify all the JS files inside a **Scripts/{custom}** folder. This is the default behavior with the default bundles.
 
-	````
+	````HTML
 	<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 	  <ul>
 	    <li>
@@ -697,7 +697,7 @@ In this task, you will configure a static bundle to define a specific set of fil
 
 	Notice that the files are not located in the same place; this is another advantage over the default bundling.
 
-	````
+	````C#
 	void Application_Start(object sender, EventArgs e)
 	{
 	    // Default behavior
@@ -725,7 +725,7 @@ In this task, you will configure a static bundle to define a specific set of fil
 
 	Notice that the link to **Static JS Bundle** is using the path you have declared when you configured the static bundle in the Global.asax.cs file: **/StaticBundle**.
 
-	````
+	````HTML
 	<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 	  <ul>
 	    <li>
@@ -769,7 +769,7 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 
 	You are defining a dynamic folder bundle that will use the **CoffeeMinify** custom minification processor that will only apply to the files with the "**.coffee**" extension (CoffeeScript files). Notice that you can use a search pattern to select the files to bundle within a folder, like '*.coffee'.
 
-	````
+	````C#
 	void Application_Start(object sender, EventArgs e)
 	{
 	    // Default behavior
@@ -803,7 +803,7 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 
 	This class inherits from JsMinify to minify the JavaScript code. Notice that it is incomplete; ideally, you will call the CoffeeScript compiler to generate the JavaScript code first, and then you will send it to the JsMinify.Process method to minify the resulting code.
 
-	````
+	````C#
 	public class CoffeeMinify : JsMinify
 	{
 	  public CoffeeMinify() { }
@@ -835,7 +835,7 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 
 	Notice that the link to **Dynamic JS Bundle** is referencing the **Scripts/bundle** folder by using the **/Coffee** suffix you configured for the dynamic folder bundle.
 
-	````
+	````HTML
 	<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 	  <ul>
 	    <li>
