@@ -863,3 +863,19 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
  	![Dynamic JS files bundle](./images/Dynamic-JS-files-bundle.png?raw=true "Dynamic JS files bundle")
  
  	_Dynamic JS files bundle_
+
+<a name="summary" />
+## Summary ##
+
+Taking advantage of the new version Visual Studio, no matter the size or complexity of your web application, Visual Studio 11 can help you turn your ideas become ture. 
+
+By completing this hands-on lab you have learned how to:
+
+- Use the new features and improvements in the CSS editor
+- Use the new features and improvements in the HTML editor
+- Use the new features and improvements in the JavaScript editor
+- Configure and use bundling and minification
+
+As you have discovered while going through the lab, the experiences, features and performance of Web-technology development has been improved and enhanced to a new level,much easier, much smooth and much comfortable.
+	
+We hope that the programming skills you learned in this and the other identity labs will enable you to write solutions with the confidence that no matter where your application will end up being deployed, you took care of identity in consistent and effective manner.
