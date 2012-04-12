@@ -297,7 +297,7 @@ Visual Studio now updates the HTML opening or closing tags of the element that y
 
 Visual Studio now includes several HTML5code snippets. In this task, you will use some of these snippets.
 
-1. Add a new folder named **audio** to the root of the web site folder. Open Windows Explorer and copy any audio file into the **audio** folder of the WhatsNewASPNET solution.
+1. Add a new folder named **audio** to the root of the web site folder. Open Windows Explorer and copy any audio file into the **audio** folder of the **WhatsNewASPNET.sln** solution.
 
 1. In the **Default.aspx** page, locate the cursor under the Web11 Rocks!! Header. Type **audio** and press the TAB key.
 
@@ -619,8 +619,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 	void Application_Start(object sender, EventArgs e)
 	{
 	  // Default behavior
-	  // Bundles all .js files in folders such as "scripts" if URL pointed to it:
-           // http://localhost:54716/scripts/custom/js 
+	  // Bundles all .js files in folders such as "scripts" if URL pointed to it: http://localhost:54716/scripts/custom/js 
 	  BundleTable.Bundles.EnableDefaultBundles();
 	
 	  ...
@@ -716,8 +715,7 @@ In this task, you will configure a static bundle to define a specific set of fil
 	    BundleTable.Bundles.Add(b);
 	
 	    // Dynamic bundle
-	    // Bundles all .coffee files in folders such as "script" when "coffee" is appended to it:
-             // http://localhost:54716/scripts/coffee
+	    // Bundles all .coffee files in folders such as "script" when "coffee" is appended to it: http://localhost:54716/scripts/coffee
 	    // DynamicFolderBundle fb = new DynamicFolderBundle("coffee", typeof(CoffeeMinify), "*.coffee");
 	    // BundleTable.Bundles.Add(fb);
 	}
