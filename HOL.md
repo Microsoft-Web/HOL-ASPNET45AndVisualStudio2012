@@ -14,7 +14,7 @@ This lab walks you through the enhancements and new features previously describe
 
 ### Objectives ###
 
-In this hands-on lab, you will learn how to:
+In this hands on lab, you will learn how to:
 
 - Use the new features and improvements in the CSS editor
 
@@ -36,7 +36,7 @@ In this hands-on lab, you will learn how to:
  
 ## Exercises ##
 
-This hands-on lab includes the following exercises:
+This hands on lab includes the following exercises:
 
 1. What's New in the CSS Editor
 
@@ -136,11 +136,11 @@ In this task, you will discover the new CSS Color Picker integrated into Visual 
 
 	>**Note:** The RGBA (Red, Green, Blue, Alpha) color definition in CSS3 enables you to define the color opacity value for a single item.  Unlike **opacity -** a similar CSS attribute **-** RGBA colors are also compatible with the latest browsers. 
 
-#### Task 3 - CSS-Compatible Code Snippets ####
+#### Task 3 - CSS Compatible Code Snippets ####
 
 In this task, you will learn how to use cross-browser compatible CSS3 snippets in order to implement some features in your website.
 
-1. In the **Site.css** file, locate the **header** CSS class definition (.header) and place the cursor below the **/*border radius*/** placeholder to add a new snippet. Press **Enter** to display the IntelliSense list and type **radius** to filter the list. Select the **border-radius** option from the list with a single-click, and then press the TAB key twice to insert the snippet. Then, type a radius size in pixels and press **enter**. For instance, type **15px.**
+1. In the **Site.css** file, locate the **header** CSS class definition (.header) and place the cursor below the **/*border radius*/** placeholder to add a new snippet. Press **Enter** to display the IntelliSense list and type **radius** to filter the list. Select the **border-radius** option from the list with a single click, and then press the TAB key twice to insert the snippet. Then, type a radius size in pixels and press **enter**. For instance, type **15px**.
 
 	The CSS3 attributes added by the snippet will render rounded borders in most HTML5 compliance browsers, including Mozilla and WebKit-based browsers.
 
@@ -151,7 +151,6 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 1. Apply the same **border** snippets in the page style (.page).
 
 	````
-	CSS
 	.page
 	{
 	    width: 960px;
@@ -186,7 +185,6 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 1. Create a new class **div.images ul li img:hover** below the **div.images ul li img** class definition and place the cursor inside the brackets**.**
 
 	````
-	CSS
 	div.images ul li img
 	{
 	  ...
@@ -201,7 +199,6 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 1. Type **transform** and press the TAB key twice in order to insert the transform snippet. Then, enter **15** to change the rotation angle value when images are hovered.
 
 	````
-	CSS
 	div.images ul li img
 	{
 	  padding-top: 50px;
@@ -261,7 +258,6 @@ In this task, you will change the DOCTYPE of a page to see how the HTML editor b
 1. Undo the changes to the DOCTYPE definition, setting the value to HTML5.
 
 	````
-	HTML
 	<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Web11.SiteMaster" %>
 	
 	<!DOCTYPE html>
@@ -282,7 +278,6 @@ Visual Studio now updates the HTML opening or closing tags of the element that y
 1. On the **Default.aspx** page, add an **H3** element with a title (for example, Web11 Rocks!).
 
 	````
-	HTML
 	<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 	  <br />
 	  <asp:Image ImageUrl="~/images/Web11.JPG" runat="server" />
@@ -315,7 +310,6 @@ Visual Studio now includes several HTML5code snippets. In this task, you will us
 1. Update the audio source to point to an existing audio file.
 
 	````
-	HTML
 	<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 	  <br />
 	  <asp:Image ImageUrl="~/images/Web11.JPG" runat="server" />
@@ -393,7 +387,7 @@ In this task, you will use the new Extract to User Control contextual operation 
 
 1. On the **Default.aspx** page, select the **H2** and **audio** elements.
 
-1. Right-click and select **Extract to User Control**.
+1. Right click and select **Extract to User Control**.
 
  	![Extract to User Control menu option](./images/Extract-to-User-Control-menu-option.png?raw=true "Extract to User Control menu option")
  
@@ -426,7 +420,7 @@ In this exercise, you will learn some of the new features and improvements of Ja
 
 This task will introduce you to some of the new JavaScript editor features, which focus on organizing your code and bringing a better user experience.
 
-1. If not already opened, start **Visual Studio** and open the **WhatsNewASPNET.sln** solution located in the **Source\WhatsNewASPNET** folder of this lab.
+1. If not already opened, start **Visual Studio** and open the **WhatsNewASPNET.sln** solution located in the **Source \ WhatsNewASPNET** folder of this lab.
 
 1. Press **F5** to run the application, then click the JavaScript link in the navigation bar. Refresh the page several times and check how the counter increments.
 
@@ -436,12 +430,11 @@ This task will introduce you to some of the new JavaScript editor features, whic
 
 1. Close the browser and go back to Visual Studio.
 
-1. Open the JavaScript.aspx page and locate the **\<script>** block (shown below).
+1. Open the JavaScript.aspx page and locate the **\<script>** block ( shown below ).
 
 	The following code uses HTML5 local storage to store a _pageLoadCount_ variable that stores the number of times the page has been visited by the current user. Local Storage is a client-side key-value database introduced with the HTML5 standard. The data is saved on the local machine, inside the user's browser.
 
 	````
-	HTML
 	<script>
 	  addCount(1);
 	  document.getElementById('count').innerHTML = getCount();
@@ -468,13 +461,13 @@ This task will introduce you to some of the new JavaScript editor features, whic
  
 	_HTML5 JavaScript features in JavaScript_
 
-1. Click any opening bracket (**{**) from the scripting code and notice that the brackets are highlighted.
+1. Click any opening bracket ( **{** ) from the scripting code and notice that the brackets are highlighted.
 
  	![Brackets are highlighted](./images/Brackets-are-highlighted.png?raw=true "Brackets are highlighted")
  
 	_Brackets are highlighted_
 
-1. Uncomment the function **testAutoAlign()** (you can use CTRL+K;CTRL+U) and locate the cursor inside the function code. Press enter to append a second line. Notice that the code is now **aligned** and **auto-indented**.
+1. Uncomment the function **testAutoAlign()** ( you can use CTRL+K;CTRL+U ) and locate the cursor inside the function code. Press enter to append a second line. Notice that the code is now **aligned** and **auto-indented**.
 
  	![JavaScript code is auto aligned](./images/JavaScript-code-is-auto-aligned.png?raw=true "JavaScript code is auto aligned")
  
@@ -487,10 +480,9 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 
 >**Note:** Visual Studio 2010 implemented ECMAStript3 compliance, while the Visual Studio 11 provides ECMAScript5 compliance.
 
-1. Open **ECMA5script5.js** located under the **Scripts\custom** project folder. You will now test validation for ECMAScript5 standard.
+1. Open **ECMA5script5.js** located under the **Scripts \ custom** project folder. You will now test validation for ECMAScript5 standard.
 
 	````
-	JavaScript
 	"use strict";
 	
 	if (true) {
@@ -500,9 +492,9 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 	}
 	````
 
-	You can check out the "**use strict"** direction in the first line of the file, which enables ECMAScript5 **strict mode**. This mode consists in a subset of the language that clarifies ambiguities from the past edition, and adds some new features, such as getters and setters, library support for JSON, and more complete reflection on object properties.
+	You can check out the " **use strict** " direction in the first line of the file, which enables ECMAScript5 **strict mode**. This mode consists in a subset of the language that clarifies ambiguities from the past edition, and adds some new features, such as getters and setters, library support for JSON, and more complete reflection on object properties.
 
-1. Open the **Error List** if not already opened (View menu | **Error List**)**.** Notice the **function** declaration is underlined. This is because in ECMA5 standard functions cannot be nested inside language structures. In the error list below you will see the warning details.
+1. Open the **Error List** if not already opened ( View menu | **Error List** )**. Notice the **function** declaration is underlined. This is because in ECMA5 standard functions cannot be nested inside language structures. In the error list below you will see the warning details.
 
  	![JavaScript validation error message](./images/JavaScript-validation-error-message.png?raw=true "JavaScript validation error message")
  
@@ -510,7 +502,7 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 
 1. Comment out the **"use strict"** direction and notice that errors disappear, but the warnings remain. 
 
-1. In the last line of the file, write any string like **"test"** (include the quotation marks to indicate it is as string). Write a period next to the string to display the IntelliSense list, and select the "trim" option.
+1. In the last line of the file, write any string like **"test"** ( include the quotation marks to indicate it is as string ). Write a period next to the string to display the IntelliSense list, and select the "trim" option.
 
 	In ECMAScript5 standard, string values and variables also have string methods defined, like trim, uppercase, search and replace.
 
@@ -522,7 +514,7 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 
 In this task, you will explore Visual Studio features for XML documentation in JavaScript. You will see the JavaScript IntelliSense list now shows the XML documentation of each function. Additionally, you will discover the navigation feature in JavaScript.
 
-1. Open **XMLDoc.js** file located in **Scripts/custom** project folder. This file contains XML documentation on each of the JavaScript functions.
+1. Open **XMLDoc.js** file located in **Scripts / custom** project folder. This file contains XML documentation on each of the JavaScript functions.
 
  	![JavaScript XML documentation integrated to IntelliSense](./images/JavaScript-XML-documentation-integrated-to-IntelliSense.png?raw=true "JavaScript XML documentation integrated to IntelliSense")
  
@@ -533,7 +525,6 @@ In this task, you will explore Visual Studio features for XML documentation in J
 1. In the **test** function, call the **multiply** function that receives two parameters. Notice the tooltip box is showing the **multiply** function documentation.
 
 	````
-	JavaScript
 	function test() {
 	  multiply(
 	}
@@ -569,9 +560,9 @@ In this task, you will explore Visual Studio features for XML documentation in J
 
 ### Exercise 4: Bundling and Minification ###
 
-How many times do your websites include more than one JavaScript or CSS file? This is a very common scenario where bundling and minification can help to reduce the file size and make the site perform faster. The new bundling feature in ASP.NET 4.5 packs a set of JS or CSS files into a single element, and reduces its size by minifying the content (i.e. removing not required blank spaces, removing comments, reducing identifiers).
+How many times do your websites include more than one JavaScript or CSS file? This is a very common scenario where bundling and minification can help to reduce the file size and make the site perform faster. The new bundling feature in ASP.NET 4.5 packs a set of JS or CSS files into a single element, and reduces its size by minifying the content ( i.e. removing not required blank spaces, removing comments, reducing identifiers ).
 
-Bundling and minification in ASP.NET 4.5 is performed at runtime, so that the process can identify the user agent (for example IE, Mozilla, etc.), and thus, improve the compression by targeting the user browser (for instance, removing stuff that is Mozilla specific when the request comes from IE).
+Bundling and minification in ASP.NET 4.5 is performed at runtime, so that the process can identify the user agent ( for example IE, Mozilla, etc ) , and thus, improve the compression by targeting the user browser ( for instance, removing stuff that is Mozilla specific when the request comes from IE ).
 
 In this exercise, you will learn how to enable and use the different types of bundling and minification in ASP.NET 4.5.
 
@@ -596,9 +587,9 @@ The simplest way to use bundling and minification is to enable the default bundl
 
 In this task, you will learn how to enable and reference the bundled and minified JS and CSS files and view the resulting output.
 
-1. If not already opened, start **Visual Studio** and open the **WhatsNewASPNET.sln** solution located in the **Source\WhatsNewASPNET** folder of this lab.
+1. If not already opened, start **Visual Studio** and open the **WhatsNewASPNET.sln** solution located in the **Source \ WhatsNewASPNET** folder of this lab.
 
-1. In the **Solution Explorer**, expand the **Styles**, **Scripts\custom** and **Scripts\bundle** folders.
+1. In the **Solution Explorer**, expand the **Styles**, **Scripts \ custom** and **Scripts \ bundle** folders.
 
 	Notice that the application is using more than one CSS and JS file.
 
@@ -611,7 +602,6 @@ In this task, you will learn how to enable and reference the bundled and minifie
 	Notice that the new **Microsoft.Web.Optimization** namespace is commented out at the beginning of the file. Uncomment the using directive to include the bundling and minification features.
 
 	````
-	C#
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
@@ -626,7 +616,6 @@ In this task, you will learn how to enable and reference the bundled and minifie
 	In this method, you are enabling the default bundling. This enables us to reference a bundled collection of CSS files in a folder by using the path to that folder, plus the "CSS" or the "JS" suffix.
 
 	````
-	C#
 	void Application_Start(object sender, EventArgs e)
 	{
 	  // Default behavior
@@ -637,12 +626,11 @@ In this task, you will learn how to enable and reference the bundled and minifie
 	}
 	````
 
-1. Open the **Optimization.aspx** file and locate the Content control for **HeadContent**.
+1. Open the **Optimization.aspx** file and locate the content control for **HeadContent**.
 
 	Notice the CSS files and the JS files are have a single referenced tag.
 
 	````
-	HTML
 	<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 	  <link href="**Styles/CSS**" rel="stylesheet" type="text/css" />
 	  <script src="**Scripts/custom/JS**"></script>
@@ -656,7 +644,6 @@ In this task, you will learn how to enable and reference the bundled and minifie
 	You can use the path **Scripts/{custom}/JS** as shown below to bundle and minify all the JS files inside a **Scripts/{custom}** folder. This is the default behavior with the default bundles.
 
 	````
-	HTML
 	<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 	  <ul>
 	    <li>
@@ -711,7 +698,6 @@ In this task, you will configure a static bundle to define a specific set of fil
 	Notice that the files are not located in the same place; this is another advantage over the default bundling.
 
 	````
-	C#
 	void Application_Start(object sender, EventArgs e)
 	{
 	    // Default behavior
@@ -740,7 +726,6 @@ In this task, you will configure a static bundle to define a specific set of fil
 	Notice that the link to **Static JS Bundle** is using the path you have declared when you configured the static bundle in the Global.asax.cs file: **/StaticBundle**.
 
 	````
-	HTML
 	<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 	  <ul>
 	    <li>
@@ -785,7 +770,6 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 	You are defining a dynamic folder bundle that will use the **CoffeeMinify** custom minification processor that will only apply to the files with the "**.coffee**" extension (CoffeeScript files). Notice that you can use a search pattern to select the files to bundle within a folder, like '*.coffee'.
 
 	````
-	C#
 	void Application_Start(object sender, EventArgs e)
 	{
 	    // Default behavior
@@ -809,7 +793,7 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
  
 	_Showing all files_
 
-1. Right-click the **CoffeeMinify.cs** file in the **Solution Explorer** and select **Include in Project**
+1. Right click the **CoffeeMinify.cs** file in the **Solution Explorer** and select **Include in Project**
 
  	![Include the CoffeeMinify.cs file in the project](./images/Include-the-CoffeeMinify.cs-file-in-the-project.png?raw=true "Include the CoffeeMinify.cs file in the project")
  
@@ -820,7 +804,6 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 	This class inherits from JsMinify to minify the JavaScript code. Notice that it is incomplete; ideally, you will call the CoffeeScript compiler to generate the JavaScript code first, and then you will send it to the JsMinify.Process method to minify the resulting code.
 
 	````
-	C#
 	public class CoffeeMinify : JsMinify
 	{
 	  public CoffeeMinify() { }
@@ -853,7 +836,6 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 	Notice that the link to **Dynamic JS Bundle** is referencing the **Scripts/bundle** folder by using the **/Coffee** suffix you configured for the dynamic folder bundle.
 
 	````
-	HTML
 	<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 	  <ul>
 	    <li>
