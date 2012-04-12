@@ -619,7 +619,8 @@ In this task, you will learn how to enable and reference the bundled and minifie
 	void Application_Start(object sender, EventArgs e)
 	{
 	  // Default behavior
-	  // Bundles all .js files in folders such as "scripts" if URL pointed to it: http://localhost:54716/scripts/custom/js
+	  // Bundles all .js files in folders such as "scripts" if URL pointed to it:
+           // http://localhost:54716/scripts/custom/js 
 	  BundleTable.Bundles.EnableDefaultBundles();
 	
 	  ...
@@ -714,10 +715,11 @@ In this task, you will configure a static bundle to define a specific set of fil
 	
 	    BundleTable.Bundles.Add(b);
 	
-	    //// Dynamic bundle
-	    //// Bundles all .coffee files in folders such as "script" when "coffee" is appended to it: http://localhost:54716/scripts/coffee
-	    //DynamicFolderBundle fb = new DynamicFolderBundle("coffee", typeof(CoffeeMinify), "*.coffee");
-	    //BundleTable.Bundles.Add(fb);
+	    // Dynamic bundle
+	    // Bundles all .coffee files in folders such as "script" when "coffee" is appended to it:
+             // http://localhost:54716/scripts/coffee
+	    // DynamicFolderBundle fb = new DynamicFolderBundle("coffee", typeof(CoffeeMinify), "*.coffee");
+	    // BundleTable.Bundles.Add(fb);
 	}
 	````
 
@@ -781,7 +783,8 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 	    ...
 	
 	    // Dynamic bundle
-	    // Bundles all .coffee files in folders such as "script" when "coffee" is appended to it: http://localhost:54716/scripts/coffee
+	    // Bundles all .coffee files in folders such as "script" when "coffee" is appended to it:
+             // http://localhost:54716/scripts/coffee
 	    DynamicFolderBundle fb = new DynamicFolderBundle("coffee", typeof(CoffeeMinify), "*.coffee");
 	    BundleTable.Bundles.Add(fb);
 	}
@@ -810,10 +813,10 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 	
 	  public override void Process(BundleResponse bundle)
 	  {
-	    //Write coffee compiler calls here
-	    //pass bundle.Files to it
-	    //replace bundle.Files with the output of Coffee Compiler  
-	    //now pass it to JS Minify
+	    // Write coffee compiler calls here
+	    // pass bundle.Files to it
+	    // replace bundle.Files with the output of Coffee Compiler  
+	    // now pass it to JS Minify
 	    base.Process(bundle);
 	  }
 	}
