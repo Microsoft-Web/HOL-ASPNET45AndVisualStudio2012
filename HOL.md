@@ -150,7 +150,7 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 
 1. Apply the same **border** snippets in the page style (.page).
 
-	````
+	````CSS
 	.page
 	{
 	    width: 960px;
@@ -184,7 +184,7 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 
 1. Create a new class **div.images ul li img:hover** below the **div.images ul li img** class definition and place the cursor inside the brackets**.**
 
-	````
+	````CSS
 	div.images ul li img
 	{
 	  ...
@@ -198,7 +198,7 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 
 1. Type **transform** and press the TAB key twice in order to insert the transform snippet. Then, enter **15** to change the rotation angle value when images are hovered.
 
-	````
+	````CSS
 	div.images ul li img
 	{
 	  padding-top: 50px;
@@ -257,7 +257,7 @@ In this task, you will change the DOCTYPE of a page to see how the HTML editor b
 
 1. Undo the changes to the DOCTYPE definition, setting the value to HTML5.
 
-	````
+	````HTML
 	<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Web11.SiteMaster" %>
 	
 	<!DOCTYPE html>
@@ -277,7 +277,7 @@ Visual Studio now updates the HTML opening or closing tags of the element that y
 
 1. On the **Default.aspx** page, add an **H3** element with a title (for example, Web11 Rocks!).
 
-	````
+	````HTML
 	<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 	  <br />
 	  <asp:Image ImageUrl="~/images/Web11.JPG" runat="server" />
@@ -309,7 +309,7 @@ Visual Studio now includes several HTML5code snippets. In this task, you will us
 
 1. Update the audio source to point to an existing audio file.
 
-	````
+	````HTML
 	<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 	  <br />
 	  <asp:Image ImageUrl="~/images/Web11.JPG" runat="server" />
@@ -434,7 +434,7 @@ This task will introduce you to some of the new JavaScript editor features, whic
 
 	The following code uses HTML5 local storage to store a _pageLoadCount_ variable that stores the number of times the page has been visited by the current user. Local Storage is a client-side key-value database introduced with the HTML5 standard. The data is saved on the local machine, inside the user's browser.
 
-	````
+	````JavaScript
 	<script>
 	  addCount(1);
 	  document.getElementById('count').innerHTML = getCount();
