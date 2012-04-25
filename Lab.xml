@@ -8,10 +8,7 @@
     </Email>
     <Name></Name>
   </Author>
-  <Description>Visual Studio 11 introduces a number of enhancements focused on improving the experience and the performance when working with 
-  Web technologies. Visual Studio editors for CSS, JavaScript and HTML now include several features to increase your 
-  productivity. Some of the enhancements are new CSS3 and HTML5 code snippets, XML documentation and navigation for JavaScript code, and 
-  built-in bundling and minification features to easily reduce the page load time, among others.
+  <Description>Visual Studio 11 introduces a number of enhancements focused on improving the experience and the performance when working with Web technologies. Visual Studio editors for CSS, JavaScript and HTML now include several features to increase your productivity. Some of the enhancements are new CSS3 and HTML5 code snippets, XML documentation and navigation for JavaScript code, and built-in bundling and minification features to easily reduce the page load time, among others.
   </Description>
   <Document ConversionType="Html">.\HOL.md</Document>
   <Title>What's New in ASP.NET and Web Development in Visual Studio 11</Title>
