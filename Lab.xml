@@ -13,8 +13,7 @@
   productivity. Some of the enhancements are new CSS3 and HTML5 code snippets, XML documentation and navigation for JavaScript code, and 
   built-in bundling and minification features to easily reduce the page load time, among others.
   </Description>
-  <Document ConversionType="Html">.\Lab.docx</Document>
-  <!--<Setup ConversionType="Html">.\Source\Setup\Setup.docx</Setup>-->
+  <Document ConversionType="Html">.\HOL.md</Document>
   <Title>What's New in ASP.NET and Web Development in Visual Studio 11</Title>
   <Version>1.2.0</Version>
   <Source>.\Source</Source>
