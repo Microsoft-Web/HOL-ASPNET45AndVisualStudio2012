@@ -8,15 +8,18 @@
     </Email>
     <Name></Name>
   </Author>
-  <Description>Visual Studio 11 introduces a number of enhancements focused on improving the experience and the performance when working with Web technologies. Visual Studio editors for CSS, JavaScript and HTML now include several features to increase your productivity. Some of the enhancements are new CSS3 and HTML5 code snippets, XML documentation and navigation for JavaScript code, and built-in bundling and minification features to easily reduce the page load time, among others.
+  <Description>Visual Studio 2012 introduces a number of enhancements focused on improving the experience and the performance when working with Web technologies. Visual Studio editors for CSS, JavaScript and HTML now include several features to increase your productivity. Some of the enhancements are new CSS3 and HTML5 code snippets, XML documentation and navigation for JavaScript code, and built-in bundling and minification features to easily reduce the page load time, among others.
   </Description>
   <Document ConversionType="Html">.\HOL.md</Document>
-  <Title>What's New in ASP.NET and Web Development in Visual Studio 11</Title>
+  <Title>What's New in ASP.NET and Web Development in Visual Studio 2012</Title>
   <Version>1.2.0</Version>
   <Source>.\Source</Source>
-  <DependencyChecker ScriptsFolder="env:PackagePath\Assets\DependencyChecker\scripts">.\Source\Setup\Dependencies.dep</DependencyChecker>
+  <DependencyChecker>.\Source\Setup\Dependencies.depi</DependencyChecker>
   <Technologies>
     <Technology>Visual Studio</Technology>
     <Technology>.NET Framework</Technology>
   </Technologies>
+	<CustomProperties>    
+		<Property Name="GitHubRepository" Value="https://github.com/Microsoft-Web/HOL-ASPNET45AndVisualStudio11" />
+	</CustomProperties>
 </Lab>

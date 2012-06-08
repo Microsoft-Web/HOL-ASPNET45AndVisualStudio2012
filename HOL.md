@@ -1,4 +1,4 @@
-﻿#What's New in ASP.NET and Web Development in Visual Studio 11#
+﻿#What's New in ASP.NET and Web Development in Visual Studio 2012#
 
 ## Overview ##
 
@@ -12,6 +12,7 @@ Last but not least, this Visual Studio version implements built-in bundling and 
 
 This lab walks you through the enhancements and new features previously described by applying minor changes to a sample Web application provided in the Source folder.
 
+<a name="Objectives" />
 ### Objectives ###
 
 In this hands on lab, you will learn how to:
@@ -24,37 +25,39 @@ In this hands on lab, you will learn how to:
 
 - Configure and use bundling and minification
 
- 
+<a name="Prerequisites" />
 ### Prerequisites ###
 
-- [Microsoft Visual Studio 11 Beta](http://go.microsoft.com/fwlink/?LinkId=240160)
+- [Microsoft Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=240160)
 
-- [Windows PowerShell](http://support.microsoft.com/kb/968930/) (for setup scripts - already installed on Windows 7 and Windows Server 2008 R2)
+- [Windows PowerShell](http://support.microsoft.com/kb/968930/) (for setup scripts - already installed on Windows 8 and Windows Server 2008 R2)
 
-- [Internet Explorer 9](http://windows.microsoft.com/en-US/internet-explorer/products/ie/home) - or an HTML5 compliant browser
+- [Internet Explorer 10](http://windows.microsoft.com/en-US/internet-explorer/products/ie/home) - or an HTML5 compliant browser
 
- 
+<a name="Exercises" />
 ## Exercises ##
 
 This hands on lab includes the following exercises:
 
-1. What's New in the CSS Editor
+1. [Exercise 1: What's New in the CSS Editor](#Exercise1)
 
-1. What's New in the HTML Editor
+1. [Exercise 2: What's New in the HTML Editor](#Exercise2)
 
-1. What's New in the JavaScript Editor
+1. [Exercise 3: What's New in the JavaScript Editor](#Exercise3)
 
-1. Bundling and Minification
+1. [Exercise 4: Bundling and Minification](#Exercise4)
 
  
 Estimated time to complete this lab: **60 minutes**.
 
+<a name="Exercise1" />
 ### Exercise 1: What's New in the CSS Editor ###
 
-Web developers should be familiar with many of the difficulties that related to CSS editing. One of the biggest issues of CSS styling is cross-browser compatibility. It often happens that, after applying styles to your site, you notice that it looks different if you open it in another browser or device. Therefore, you may spend a considerable time on fixing those visual issues to realize that, when you finally make it work in one browser, it is broken in the others.
+Web developers should be familiar with many of the difficulties related to CSS editing. One of the biggest issues of CSS styling is cross-browser compatibility. It often happens that, after applying styles to your site, you notice that it looks different if you open it in another browser or device. Therefore, you may spend a considerable time on fixing those visual issues to realize that, when you finally make it work in one browser, it is broken in the others.
 
 Visual Studio now includes features that help developers access, work and organize CSS style sheets effectively. Throughout this exercise, you will meet the new features for an effective organization and edition, as well as the CSS3 Code Snippets for cross-browser compatibility.
 
+<a name="Ex1Task1" />
 #### Task 1 - New Editor Features ####
 
 In this task, you will discover the new features of the CSS Editor. This new editor will help you increase your productivity by taking advantage of the new smart indentation, the improved code comments and the enhanced IntelliSense list.
@@ -63,9 +66,9 @@ In this task, you will discover the new features of the CSS Editor. This new edi
 
 1. In Solution Explorer, open the **Site.css** file located under the **Styles** folder. Make sure the **Text Editor** tools are visible on the toolbar. To do that, select the **View** | **Toolbars** menu option, and check the **Text Editor** options. You will notice that, since this new version, the **Comment** button (![comment-button](images/comment-button.png?raw=true)) and the **Uncomment** button (![uncomment-button](images/uncomment-button.png?raw=true)) are also enabled for the CSS editor.
 
- 	![Enabling Editor and CCS Tools](./images/Enabling-Editor-and-CCS-Tools.png?raw=true "Enabling Editor and CCS Tools")
+ 	![Enabling Editor and CSS Tools](./images/Enabling-Editor-and-CSS-Tools.png?raw=true "Enabling Editor and CSS Tools")
  
-	_Enabling Editor and CCS Tools_
+	_Enabling Editor and CSS Tools_
 
 1. Scroll the code and select any CSS class definition. Click the **Comment** (![comment-button](images/comment-button.png?raw=true)) button to comment the selected lines. Then, click the **Uncomment** (![uncomment-button](images/uncomment-button.png?raw=true)) button to undo the changes.
 
@@ -105,7 +108,8 @@ In this task, you will discover the new features of the CSS Editor. This new edi
  	![IntelliSense enhancements in CSS](./images/IntelliSense-enhancements-in-CSS.png?raw=true "IntelliSense enhancements in CSS")
  
  	_IntelliSense enhancements in CSS_
- 
+
+<a name="Ex1Task2" /> 
 #### Task 2 - The Color Picker ####
 
 In this task, you will discover the new CSS Color Picker integrated into Visual Studio IntelliSense.
@@ -116,7 +120,7 @@ In this task, you will discover the new CSS Color Picker integrated into Visual 
  
 	_Locating the cursor_
 
-1. Press the **spacebar** to display the color picker. Notice that the first colors you will see are the most frequent colors of your site. If you click the white color, its HTML color code (#fff) will replace the current color code in the stylesheet.
+1. Delete the **colon** (:) and write it again to display the color picker. Notice that the first colors you will see are the most frequent colors of your site. If you click the white color, its HTML color code (#fff) will replace the current color code in the stylesheet.
 
  	![Color picker](./images/Color-picker.png?raw=true "Color picker")
  
@@ -136,11 +140,12 @@ In this task, you will discover the new CSS Color Picker integrated into Visual 
 
 	>**Note:** The RGBA (Red, Green, Blue, Alpha) color definition in CSS3 enables you to define the color opacity value for a single item.  Unlike **opacity -** a similar CSS attribute **-** RGBA colors are also compatible with the latest browsers. 
 
+<a name="Ex1Task3" />
 #### Task 3 - CSS Compatible Code Snippets ####
 
 In this task, you will learn how to use cross-browser compatible CSS3 snippets in order to implement some features in your website.
 
-1. In the **Site.css** file, locate the **header** CSS class definition (.header) and place the cursor below the **/*border radius*/** placeholder to add a new snippet. Press **Enter** to display the IntelliSense list and type **radius** to filter the list. Select the **border-radius** option from the list with a single click, and then press the TAB key twice to insert the snippet. Then, type a radius size in pixels and press **enter**. For instance, type **15px**.
+1. In the **Site.css** file, locate the **header** CSS class definition (.header) and place the cursor below the **/\*border radius\*/** placeholder to add a new snippet. Press **Enter** to display the IntelliSense list and type **radius** to filter the list. Select the **border-radius** option from the list with a double click, and then press the **TAB** key to insert the snippet. Then, type a radius size in pixels and press **Enter**. For instance, type **15px**.
 
 	The CSS3 attributes added by the snippet will render rounded borders in most HTML5 compliance browsers, including Mozilla and WebKit-based browsers.
 
@@ -174,7 +179,7 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 
 1. Open the **Custom.css** file located under the **Styles** folder and place the cursor inside **div.images ul li img** class definition.
 
-1. Press enter to display the IntelliSense list, type **box-shadow** and press the TAB key twice to insert the default shadow code snippet inside the class definition. Then, type **border-radius** and insert the code snippet. Type **15px** to set radius size and press **ENTER**.
+1. Press enter to display the IntelliSense list, type **box-shadow** and press the **TAB** key twice to insert the default shadow code snippet inside the class definition. Then, type **border-radius** and insert the code snippet. Type **15px** to set radius size and press **ENTER**.
 
  	![Rounded corners with shadow](./images/Rounded-corners-with-shadow.png?raw=true "Rounded corners with shadow")
  
@@ -196,7 +201,7 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 	}
 	````
 
-1. Type **transform** and press the TAB key twice in order to insert the transform snippet. Then, enter **15** to change the rotation angle value when images are hovered.
+1. Type **transform** and press the **TAB** key twice in order to insert the transform snippet. Then, enter **15** to change the rotation angle value when images are hovered.
 
 	````CSS
 	div.images ul li img
@@ -223,16 +228,18 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
  
 	_Transform snippet rotating an image_
 
-	> **Note:** If you cannot see the shadows, make sure the document mode is set to IE9 standards. Press **F12** to open Internet Explorer developer tools and click **Document Mode** to change to IE9 standards.
+	> **Note:** If you are using Internet Explorer 10 and cannot see the shadows, make sure the document mode is set to IE10 standards. Press **F12** to open Internet Explorer developer tools and click **Document Mode** to change to IE10 standards.
 
 	![about-us](images/about-us.png?raw=true)
  
+<a name="Exercise2" />
 ### Exercise 2: What's New in the HTML Editor ###
 
 Visual Studio has an improved HTML editor. Some of the enhancements included in this version are smart indentation in HTML documents, HTML5 snippets, HTML start and end tag matching, and HTML validation. Throughout this exercise, you will see how these changes improve your fluency when working in the website markup.
 
 Like the CSS editor, the HTML editor was also improved. Most of these improvements are small ones that make the Web developer's life easier. Things like more code snippets for HTML5, smart indentation, matching start and end tags when editing and validation targeting the HTML document DOCTYPE are some of these improvements.
 
+<a name="Ex2Task1" />
 #### Task 1 - Improved DOCTYPE Validation ####
 
 The HTML editor now has the ability to check the DOCTYPE of your page, even though the definition might be in the master page. Depending on the DOCTYPE of your page, the HTML editor will validate with the correct set of rules and will filter the IntelliSense list considering the DOCTYPE elements.
@@ -249,21 +256,23 @@ In this task, you will change the DOCTYPE of a page to see how the HTML editor b
  
 	_Use Doctype in HTML Source Editing toolbar_
 
+1. Change the Target Schema to HTML 4.01.
+
+ 	![Changing Doctype in HTML Source Editing toolbar](./images/Changing-Doctype-in-HTML-Source-Editing-toolbar.png?raw=true "Changing Doctype in HTML Source Editing toolbar")
+ 
+	_Changing Doctype in HTML Source Editing toolbar_
+
 1. Place the cursor under the **body** element, and start typing the name of an HTML5 element (for example, **video**). Notice that the element is not available in the IntelliSense list.
 
  	![HTML5 elements not listed](./images/HTML5-elements-not-listed.png?raw=true "HTML5 elements not listed")
  
 	_HTML5 elements not listed_
 
-1. Undo the changes to the DOCTYPE definition, setting the value to HTML5.
+1. Undo the changes to the Target Schema for Validation Toolbar, picking DOCTYPE: XHTML5 from the dropdown list.
 
-	````HTML
-	<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Web11.SiteMaster" %>
-	
-	<!DOCTYPE html>
-	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-	<head runat="server">
-	````
+	![Use Doctype in HTML Source Editing toolbar](./images/Use-Doctype-in-HTML-Source-Editing-toolbar.png?raw=true "Use Doctype in HTML Source Editing toolbar")
+ 
+	_Reset Doctype in HTML Source Editing toolbar_
 
 1. Place the cursor under the **body** element and start typing an HTML5 element again (For example, like **video**). Notice that the HTML5 elements are now available in the IntelliSense list.
 
@@ -271,17 +280,18 @@ In this task, you will change the DOCTYPE of a page to see how the HTML editor b
  
  	_HTML5 elements being listed_
  
+<a name="Ex2Task2" />
 #### Task 2 - Start/End Tags Automatic Update ####
 
 Visual Studio now updates the HTML opening or closing tags of the element that you are editing to match each other. This new feature will improve your productivity when editing HTML tags.
 
-1. On the **Default.aspx** page, add an **H3** element with a title (for example, Web11 Rocks!).
+1. On the **Default.aspx** page, add an **H3** element with a title (for example, Visual Studio 2012 Rocks!).
 
 	````HTML
 	<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 	  <br />
 	  <asp:Image ImageUrl="~/images/Web11.JPG" runat="server" />
-	  <h3>Visual Studio 11 Rocks!!</h3>
+	  <h3>Visual Studio 2012 Rocks!!</h3>
 	</asp:Content>
 	````
 
@@ -293,9 +303,10 @@ Visual Studio now updates the HTML opening or closing tags of the element that y
  
  	_Automatic update of the end tag_
  
+<a name="Ex2Task3" />
 #### Task 3 - New HTML5 Code Snippets ####
 
-Visual Studio now includes several HTML5code snippets. In this task, you will use some of these snippets.
+Visual Studio now includes several HTML5 code snippets. In this task, you will use some of these snippets.
 
 1. Add a new folder named **audio** to the root of the web site folder. Open Windows Explorer and copy any audio file into the **audio** folder of the **WhatsNewASPNET.sln** solution.
 
@@ -313,12 +324,13 @@ Visual Studio now includes several HTML5code snippets. In this task, you will us
 	<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 	  <br />
 	  <asp:Image ImageUrl="~/images/Web11.JPG" runat="server" />
-	  <h2>Web11 Rocks!!</h2>
+	  <h2>Visual Studio 2012 Rocks!!</h2>
 	  <audio controls="controls">
 	    <source src="audio/Kalimba.mp3" />
 	  </audio>
 	</asp:Content>
 	````
+>**Note:** You will need to add the audio file to the solution.
 
 1. Press **F5** to run the site and play the audio.
 
@@ -328,7 +340,7 @@ Visual Studio now includes several HTML5code snippets. In this task, you will us
 
 	>**Note:** You can also try more snippets included in Visual Studio, such as video, figure, etc.
 
-1. Now, try to insert a control in some part of the page. For example, try to insert a **GridView** control, but instead of typing **Gri,** start typing **GV.** Notice that the IntelliSense list shows the **asp:GridView** control.
+1. Now, try to insert a control in some part of the page. For example, try to insert a **GridView** control, but instead of typing **<Gri,** start typing **<GV**. Notice that the IntelliSense list shows the **asp:GridView** control.
 
 	IntelliSense in the HTML Editor now provides title-casing search, as well as partial matching (retrieving all elements that contains the term).
 
@@ -336,13 +348,13 @@ Visual Studio now includes several HTML5code snippets. In this task, you will us
  
 	_Inserting a GridView with IntelliSense lists_
 
-	If you type **grid** you will get the all the items that match the term, but Visual Studio will suggest the **gridview** control:
+	If you type **<grid** you will get all the items that match the term, but Visual Studio will suggest the **gridview** control:
 
  	![Inserting a GridView with IntelliSense lists and partial matching](./images/Inserting-a-GridView-with-IntelliSense-lists-and-partial-matching.png?raw=true "Inserting a GridView with IntelliSense lists and partial matching")
  
 	_Inserting a GridView with IntelliSense lists and partial matching_
 
- 
+<a name="Ex2Task4" />
 #### Task 4 - HTML Editor Smart Tags ####
 
 Another improvement in the HTML Editor is the Smart Tags feature. Smart tags make it easy to perform common or repetitive development tasks on a per-control basis. This feature was already available in the HTML Designer, but not in the HTML Editor.
@@ -353,10 +365,10 @@ Another improvement in the HTML Editor is the Smart Tags feature. Smart tags mak
  
  	_Smart tasks for the Menu control_
  
- 
+<a name="Ex2Task5" />
 #### Task 5 - Smart Indentation ####
 
-One of the best practices in HTML is indenting the nested elements to keep the code readable. In Visual Studio 11, you will notice that the editor automatically indents the elements while you are writing the code.
+One of the best practices in HTML is indenting the nested elements to keep the code readable. In Visual Studio 2012, you will notice that the editor automatically indents the elements while you are writing the code.
 
 >**Note:** In previous version of Visual Studio, smart indentation was available in the XML editor but not in the HTML editor. 
 
@@ -376,9 +388,9 @@ One of the best practices in HTML is indenting the nested elements to keep the c
  
 	_Smart indentation in the HTML Editor_
 
-1. Restore the audio tag with the content you have removed, or close Default.aspx without saving the changes.
+1. Restore the audio tag with the content you have removed, or close **Default.aspx** without saving the changes.
 
- 
+<a name="Ex2Task6" />
 #### Task 6 - Extract to User Control ####
 
 The Refactoring tools included in Visual Studio, such as extracting a portion of code to a function, are great features that facilitate the improvement and the refactoring the existing code. The counterpart for ASP.NET pages would be the extraction of HTML code to a User Control. Doing it manually would involve several steps, like creating a new User Control, moving the code section to the User Control, registering a tag prefix for the User Control, and, finally, instantiating the User Control on the pages. Now, the new _Extract to User Control_ tool automatically performs all those steps for you.
@@ -407,15 +419,16 @@ In this task, you will use the new Extract to User Control contextual operation 
 
 1. Press **F5** to run the page and verify that the control works.
 
- 
+<a name="Exercise3" />
 ### Exercise 3: What's New in the JavaScript Editor ###
 
 Writing or editing JavaScript code is not an easy task, especially when your application starts to grow in size and you find yourself dealing with long files and hundreds of functions. Script developers usually have to do some extra work to maintain code legibility and navigate across files. With the inclusion of JavaScript libraries like jQuery, script navigation has become a challenge itself because of the code length.
 
 Visual Studio has renewed the JavaScript editor with the promise to make the code mode accessible and organized. Many Visual Studio features that already existed in C# or VB editors are now implemented in the JavaScript editor: Go To Definition, automatic indentation, documentation and validation when you are writing. With the renewed IntelliSense list you will have the JavaScript function catalog at your fingertips.
 
-In this exercise, you will learn some of the new features and improvements of JavaScript editor. You will browse sample files and discover each of the new characteristics that will make your JavaScript programming more efficient within Visual Studio 11.
+In this exercise, you will learn some of the new features and improvements of JavaScript editor. You will browse sample files and discover each of the new characteristics that will make your JavaScript programming more efficient within Visual Studio 2012.
 
+<a name="Ex3Task1" />
 #### Task 1 - JavaScript Editor New Features ####
 
 This task will introduce you to some of the new JavaScript editor features, which focus on organizing your code and bringing a better user experience.
@@ -430,7 +443,7 @@ This task will introduce you to some of the new JavaScript editor features, whic
 
 1. Close the browser and go back to Visual Studio.
 
-1. Open the JavaScript.aspx page and locate the **\<script>** block (shown below).
+1. Open the **JavaScript.aspx** page and locate the **\<script>** block (shown below).
 
 	The following code uses HTML5 local storage to store a _pageLoadCount_ variable that stores the number of times the page has been visited by the current user. Local Storage is a client-side key-value database introduced with the HTML5 standard. The data is saved on the local machine, inside the user's browser.
 
@@ -467,18 +480,18 @@ This task will introduce you to some of the new JavaScript editor features, whic
  
 	_Brackets are highlighted_
 
-1. Uncomment the function **testAutoAlign()** (you can use CTRL+K;CTRL+U) and locate the cursor inside the function code. Press enter to append a second line. Notice that the code is now **aligned** and **auto-indented**.
+1. Uncomment the function **testAutoAlign()** (select the three lines and you can use **CTRL** + **K**; **CTRL** + **U**) and locate the cursor inside the function code. Press enter to append a second line. Notice that the code is now **aligned** and **auto-indented**.
 
  	![JavaScript code is auto aligned](./images/JavaScript-code-is-auto-aligned.png?raw=true "JavaScript code is auto aligned")
  
 	_JavaScript code is auto aligned_
 
- 
+<a name="Ex3Task2" />
 #### Task 2 - Validating JavaScript ####
 
 In this task, you will discover the new JavaScript validation for the ECMAScript5 standard. This feature will help you to write compliant JavaScript code, while preventing scripting issues before site deployment.
 
->**Note:** Visual Studio 2010 implemented ECMAStript3 compliance, while the Visual Studio 11 provides ECMAScript5 compliance.
+>**Note:** Visual Studio 2010 implemented ECMAStript3 compliance, while Visual Studio 2012 provides ECMAScript5 compliance.
 
 1. Open **ECMA5script5.js** located under the **Scripts\custom** project folder. You will now test validation for ECMAScript5 standard.
 
@@ -494,7 +507,7 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 
 	You can check out the " **use strict** " direction in the first line of the file, which enables ECMAScript5 **strict mode**. This mode consists in a subset of the language that clarifies ambiguities from the past edition, and adds some new features, such as getters and setters, library support for JSON, and more complete reflection on object properties.
 
-1. Open the **Error List** if not already opened (View menu | **Error List**). Notice the **function** declaration is underlined. This is because in ECMA5 standard functions cannot be nested inside language structures. In the error list below you will see the warning details.
+1. Open the **Error List** if not already opened (**View** menu | **Error List**). Notice the **function** declaration is underlined. This is because in ECMA5 standard functions cannot be nested inside language structures. In the error list below you will see the warning details.
 
  	![JavaScript validation error message](./images/JavaScript-validation-error-message.png?raw=true "JavaScript validation error message")
  
@@ -502,14 +515,15 @@ In this task, you will discover the new JavaScript validation for the ECMAScript
 
 1. Comment out the **"use strict"** direction and notice that errors disappear, but the warnings remain. 
 
-1. In the last line of the file, write any string like **"test"** (include the quotation marks to indicate it is as string). Write a period next to the string to display the IntelliSense list, and select the "trim" option.
+1. In the last line of the file, write any string like **"test"** (include the quotation marks to indicate it is as string). Write a period next to the string to display the IntelliSense list, and select the **trim** option.
 
 	In ECMAScript5 standard, string values and variables also have string methods defined, like trim, uppercase, search and replace.
 
  	![IntelliSense list in JavaScript](./images/IntelliSense-list-in-JavaScript.png?raw=true "IntelliSense list in JavaScript")
  
  	_IntelliSense list in JavaScript_
- 
+
+<a name="Ex3Task3" /> 
 #### Task 3 - XML Documentation for JavaScript ####
 
 In this task, you will explore Visual Studio features for XML documentation in JavaScript. You will see the JavaScript IntelliSense list now shows the XML documentation of each function. Additionally, you will discover the navigation feature in JavaScript.
@@ -558,6 +572,7 @@ In this task, you will explore Visual Studio features for XML documentation in J
 
 >**Note:** Make sure that GotoDefinition.js has no syntax errors before saving the file. 
 
+<a name="Exercise4" />
 ### Exercise 4: Bundling and Minification ###
 
 How many times do your websites include more than one JavaScript or CSS file? This is a very common scenario where bundling and minification can help to reduce the file size and make the site perform faster. The new bundling feature in ASP.NET 4.5 packs a set of JS or CSS files into a single element, and reduces its size by minifying the content ( i.e. removing not required blank spaces, removing comments, reducing identifiers ).
@@ -566,21 +581,20 @@ Bundling and minification in ASP.NET 4.5 is performed at runtime, so that the pr
 
 In this exercise, you will learn how to enable and use the different types of bundling and minification in ASP.NET 4.5.
 
+<a name="Ex4Task1" />
 #### Task 1 - Installing the Bundling and Minification Package from NuGet ####
-
-1. Open **Visual Studio 11** if not already opened.
 
 1. If not already opened, start **Visual Studio** and open the **WhatsNewASPNET.sln** solution located in the **Source\WhatsNewASPNET** folder of this lab.
 
 1. Open the NuGet Package Manager Console. To do this, use the menu **View** | **Other Windows** | **Package Manager Console**.
 
- 	![Opening the package manager console](./images/Opening-the-package-manager-console.png?raw=true "Opening the package manager console")
+ 	![Opening the package manager file:///C:/Users/User/AppData/Local/Temp/Marker3744/images/Multiple-Stylesheets-and-JavaScript-files-in-the-application.png?raw=trueconsole](./images/Opening-the-package-manager-console.png?raw=true "Opening the package manager console")
  
 	_Opening the package manager console_
 
-1. In the **Package Manager Console,** type **Install-Package Microsoft.Web.Optimization**
+1. In the **Package Manager Console,** type **Install-Package Microsoft.Web.Optimization** and press **ENTER**.
 
- 
+<a name="Ex4Task2" />
 #### Task 2 - Default Bundles ####
 
 The simplest way to use bundling and minification is to enable the default bundles. This method uses conventions to let you reference the bundled and minified version for the JS and CSS files in a folder.
@@ -613,7 +627,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 1. Locate the **Application_Start** method.
 
-	In this method, you are enabling the default bundling. This enables us to reference a bundled collection of CSS files in a folder by using the path to that folder, plus the "CSS" or the "JS" suffix.
+	In this method, uncomment the EnableDefaultBundles call as shown in the snippet below. This enables us to reference a bundled collection of CSS files in a folder by using the path to that folder, plus the "CSS" or the "JS" suffix.
 
 	````C#
 	void Application_Start(object sender, EventArgs e)
@@ -628,12 +642,12 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 1. Open the **Optimization.aspx** file and locate the content control for **HeadContent**.
 
-	Notice the CSS files and the JS files are have a single referenced tag.
+	Notice the CSS files and the JS files have a single referenced tag.
 
 	````HTML
 	<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-	  <link href="**Styles/CSS**" rel="stylesheet" type="text/css" />
-	  <script src="**Scripts/custom/JS**"></script>
+	  <link href="Styles/CSS" rel="stylesheet" type="text/css" />
+	  <script src="Scripts/custom/JS"></script>
 	</asp:Content>
 	````
 
@@ -641,7 +655,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 1. Notice that the links are using the bundling conventions in the **href** attribute to get all the CSS or JS files from the Styles and Scripts\custom folder respectively.
 
-	You can use the path **Scripts/{custom}/JS** as shown below to bundle and minify all the JS files inside a **Scripts/{custom}** folder. This is the default behavior with the default bundles.
+	You can use the path **Scripts/custom/JS** as shown below to bundle and minify all the JS files inside a **Scripts/custom** folder. This is the default behavior with the default bundles.
 
 	````HTML
 	<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -680,7 +694,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 	Enabling compression for CSS or JS files was much more complicated in previous ASP.NET version. Now, as you have seen, you just need to add one line in the _Global.asax_ file to enable bundling, and then reference the bundled files from your site.
 
- 
+<a name="Ex4Task3" />
 #### Task 3 - Static Bundles ####
 
 The static bundle approach allows you to customize the set of files to bundle, the reference and the minification method that will be used.
@@ -693,7 +707,7 @@ In this task, you will configure a static bundle to define a specific set of fil
 
 1. Uncomment the static bundle code as shown in the code below.
 
-	You are defining a static bundle that will be referenced with the "**~/StaticBundle**" virtual path and use **JsMinify** for minification for all the specified files with the **AddFile** method. Finally, you are adding the static bundle to the **BundleTable** and enabling it.
+	You are defining a static bundle that will be referenced with the "**~/StaticBundle**" virtual path and use **JsMinify** for minification of all the specified files with the **AddFile** method. Finally, you are adding the static bundle to the **BundleTable** and enabling it.
 
 	Notice that the files are not located in the same place; this is another advantage over the default bundling.
 
@@ -735,7 +749,7 @@ In this task, you will configure a static bundle to define a specific set of fil
 	      <h2><a href="Scripts/custom/JS">JS Bundle</a></h2>
 	    </li>
 	    <li>
-	      <h2><a href="**StaticBundle**">Static JS Bundle</a></h2>
+	      <h2><a href="StaticBundle">Static JS Bundle</a></h2>
 	    </li>
 	    <li>
 	      <h2><a href="Scripts/bundle/Coffee">Dynamic JS Bundle</a></h2>
@@ -756,7 +770,7 @@ In this task, you will configure a static bundle to define a specific set of fil
 
 1. Close the browser and return to Visual Studio.
 
- 
+<a name="Ex4Task4" />
 #### Task 4 - Dynamic Folder Bundles ####
 
 In this task, you will learn how to configure dynamic folder bundles. The power of dynamic bundling is that you can include static JavaScript, as well as other files in languages that compiles into JavaScript, and thus, require some processing before the bundling is executed.
@@ -846,7 +860,7 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 	      <h2><a href="Scripts/custom/JS">JS Bundle</a></h2>
 	    </li>
 	    <li>
-	      <h2><a href="**StaticBundle**">Static JS Bundle</a></h2>
+	      <h2><a href="StaticBundle">Static JS Bundle</a></h2>
 	    </li>
 	    <li>
 	      <h2><a href="Scripts/bundle/Coffee">Dynamic JS Bundle</a></h2>
@@ -865,8 +879,8 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
  
  	_Dynamic JS files bundle_
 
-<a name="summary" />
+<a name="Summary" />
 ## Summary ##
-This lab helps you to understand what New in ASP.NET and Web Development in Visual Studio 11 is and how to take advantage of the variety of enhancements in Visual Studio 11. 
+This lab helps you to understand what New in ASP.NET and Web Development in Visual Studio 2012 is and how to take advantage of the variety of enhancements in Visual Studio 2012. 
 
-By completing this Hands-On Lab, you have learnt how to use the new features and improvements in Visual Studio 2011 Editors for CSS, JavaScript and HTML. In addition, you have learnt how Visual Studio 2011 implements built-in bundling and minification.
+By completing this Hands-On Lab, you have learnt how to use the new features and improvements in Visual Studio 2012 Editors for CSS, JavaScript and HTML. In addition, you have learnt how Visual Studio 2012 implements built-in bundling and minification.

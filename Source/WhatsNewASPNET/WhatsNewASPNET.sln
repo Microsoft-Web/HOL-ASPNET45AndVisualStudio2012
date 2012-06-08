@@ -4,15 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web11", "WhatsNewASPNET\Web11.csproj", "{45C3DB56-2CE2-4270-ACF4-05627136B2F1}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccLocalPath0 = .
-		SccLocalPath1 = WhatsNewASPNET
-		SccNumberOfProjects = 2
-		SccProjectName1 = WhatsNewASPNET
-		SccProjectUniqueName1 = WhatsNewASPNET\\Web11.csproj
-		SccTeamFoundationServer = https://vstf-us-wa-05.partners.extranet.microsoft.com:8443/tfs/ext05
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

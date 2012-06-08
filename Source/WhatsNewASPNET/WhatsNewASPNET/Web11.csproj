@@ -42,14 +42,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\EntityFramework\v4.0_4.1.0.0__b77a5c561934e089\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Web.Optimization">
-      <HintPath>..\packages\Microsoft.Web.Optimization.0.1\lib\net40\Microsoft.Web.Optimization.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
@@ -85,7 +78,6 @@
     <Content Include="JavaScript.aspx" />
     <Content Include="Scripts\bundle\JScript1.js" />
     <Content Include="Scripts\bundle\JScript2.js" />
-    <Content Include="packages.config" />
     <None Include="Scripts\bundle\Script1.coffee" />
     <None Include="Scripts\bundle\Script2.coffee" />
     <Content Include="Scripts\custom\ECMAScript5.js" />

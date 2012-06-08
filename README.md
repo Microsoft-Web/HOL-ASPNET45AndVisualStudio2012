@@ -1,10 +1,10 @@
-# What's New in ASP.NET and Web Development in Visual Studio 11 #
+﻿# What's New in ASP.NET and Web Development in Visual Studio 2012 #
 
 ## Hands-on Lab ##
 
 ### Introduction ###
 
-This Hands-On Lab is a step-by-step guide that is designed to help you learn more about the new features available to web developers in Visual Studio 11. In it, you will build a complete web application using Visual Studio 11. 
+This Hands-On Lab is a step-by-step guide that is designed to help you learn more about the new features available to web developers in Visual Studio 2012. In it, you will build a complete web application using Visual Studio 2012. 
 
 ### Repository Structure ###
 
