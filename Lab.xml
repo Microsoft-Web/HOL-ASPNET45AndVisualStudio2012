@@ -20,6 +20,6 @@
     <Technology>.NET Framework</Technology>
   </Technologies>
 	<CustomProperties>    
-		<Property Name="GitHubRepository" Value="https://github.com/Microsoft-Web/HOL-ASPNET45AndVisualStudio11" />
+		<Property Name="GitHubRepository" Value="https://github.com/Microsoft-Web/HOL-ASPNET45AndVisualStudio2012" />
 	</CustomProperties>
 </Lab>
