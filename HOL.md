@@ -831,7 +831,7 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 
 1. Open the **CoffeeMinify.cs** file.
 
-	This class inherits from JsMinify to minify the JavaScript code. Notice that it is incomplete; ideally, you will call the CoffeeScript compiler to generate the JavaScript code first, and then you will send it to the JsMinify.Process method to minify the resulting code.
+	This class inherits from JsMinify to minify the JavaScript output resulting from the CoffeeScript code compilation. It calls the CoffeeScript compiler to generate the JavaScript code first, and then it sends it to the JsMinify.Process method to minify the resulting code.
 
 	````C#
     public class CoffeeMinify : JsMinify
