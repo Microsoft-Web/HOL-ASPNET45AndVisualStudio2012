@@ -28,7 +28,7 @@ In this hands on lab, you will learn how to:
 <a name="Prerequisites" />
 ### Prerequisites ###
 
-- [Microsoft Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=240160)
+- [Microsoft Visual Studio Express 2012 for Web](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web) or superior
 
 - [Windows PowerShell](http://support.microsoft.com/kb/968930/) (for setup scripts - already installed on Windows 8 and Windows Server 2008 R2)
 
@@ -86,6 +86,7 @@ In this task, you will discover the new features of the CSS Editor. This new edi
 
 1. Locate the main class definition (.main) and append a style to the div elements. You will notice that the code aligns automatically, helping users to find the parent classes at a glance.
 
+	<!-- mark:7-10 -->
 	````CSS
 	.main
 	{
@@ -155,6 +156,7 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 
 1. Apply the same **border** snippets in the page style (.page).
 
+	<!-- mark:8-10 -->
 	````CSS
 	.page
 	{
@@ -189,6 +191,7 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 
 1. Create a new class **div.images ul li img:hover** below the **div.images ul li img** class definition and place the cursor inside the brackets**.**
 
+	<!-- mark:6-9 -->
 	````CSS
 	div.images ul li img
 	{
@@ -201,8 +204,9 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 	}
 	````
 
-1. Type **transform** and press the **TAB** key twice in order to insert the transform snippet. Then, enter **15** to change the rotation angle value when images are hovered.
+1. Type **transform** and press the **TAB** key twice in order to insert the transform snippet. Then, enter **rotate(-15deg)** to change the rotation angle value when images are hovered.
 
+	<!-- mark:11-15 -->
 	````CSS
 	div.images ul li img
 	{
@@ -214,8 +218,8 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 	
 	div.images ul li img:hover
 	{
-	  -ms-transform: rotate(-15deg);
 	  -moz-transform: rotate(-15deg);
+	  -ms-transform: rotate(-15deg);
 	  -o-transform: rotate(-15deg);
 	  -webkit-transform: rotate(-15deg);
 	  transform: rotate(-15deg);
@@ -287,6 +291,7 @@ Visual Studio now updates the HTML opening or closing tags of the element that y
 
 1. On the **Default.aspx** page, add an **H3** element with a title (for example, Visual Studio 2012 Rocks!).
 
+	<!-- mark:4 -->
 	````HTML
 	<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 	  <br />
@@ -320,6 +325,7 @@ Visual Studio now includes several HTML5 code snippets. In this task, you will u
 
 1. Update the audio source to point to an existing audio file.
 
+	<!-- mark:6 -->
 	````HTML
 	<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 	  <br />
@@ -538,6 +544,7 @@ In this task, you will explore Visual Studio features for XML documentation in J
 
 1. In the **test** function, call the **multiply** function that receives two parameters. Notice the tooltip box is showing the **multiply** function documentation.
 
+	<!-- mark:2 -->
 	````JavaScript
 	function test() {
 	  multiply(
@@ -615,6 +622,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 	Notice that the new **Microsoft.Web.Optimization** namespace is commented out at the beginning of the file. Uncomment the using directive to include the bundling and minification features.
 
+	<!-- mark:7 -->
 	````C#
 	using System;
 	using System.Collections.Generic;
@@ -629,6 +637,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 	In this method, uncomment the EnableDefaultBundles call as shown in the snippet below. This enables us to reference a bundled collection of CSS files in a folder by using the path to that folder, plus the "CSS" or the "JS" suffix.
 
+	<!-- mark:5 -->
 	````C#
 	void Application_Start(object sender, EventArgs e)
 	{
@@ -711,6 +720,7 @@ In this task, you will configure a static bundle to define a specific set of fil
 
 	Notice that the files are not located in the same place; this is another advantage over the default bundling.
 
+	<!-- mark:9-15 -->
 	````C#
 	void Application_Start(object sender, EventArgs e)
 	{
@@ -760,7 +770,7 @@ In this task, you will configure a static bundle to define a specific set of fil
 
 1. Press **F5** to run the application, and then navigate to the **Optimization** page.
 
-1. Click on the **Static JS Bundle** link to download and open the file in Notepad.
+1. Click on the **Static JS Bundle** link to open the file.
 
 	Notice that the minified bundled JavaScript file is the output for all the JavaScript files configured in the static bundle file under the path "/StaticBundle".
 
@@ -783,6 +793,7 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 
 	You are defining a dynamic folder bundle that will use the **CoffeeMinify** custom minification processor that will only apply to the files with the "**.coffee**" extension (CoffeeScript files). Notice that you can use a search pattern to select the files to bundle within a folder, like '*.coffee'.
 
+	<!-- mark:14-15 -->
 	````C#
 	void Application_Start(object sender, EventArgs e)
 	{
@@ -802,6 +813,10 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 	}
 	````
 
+1. Open the NuGet Package Manager Console. To do this, use the menu **View** | **Other Windows** | **Package Manager Console**.
+
+1. In the **Package Manager Console,** type **Install-Package CoffeeSharp** and press **ENTER**.
+
 1. Click the **Show All Files** button in the **Solution Explorer** window
 
  	![Showing all files ](./images/Showing-all-files-.png?raw=true "Showing all files ")
@@ -819,26 +834,23 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 	This class inherits from JsMinify to minify the JavaScript code. Notice that it is incomplete; ideally, you will call the CoffeeScript compiler to generate the JavaScript code first, and then you will send it to the JsMinify.Process method to minify the resulting code.
 
 	````C#
-	public class CoffeeMinify : JsMinify
-	{
-	  public CoffeeMinify() { }
-	
-	  public override void Process(BundleResponse bundle)
-	  {
-	    // Write coffee compiler calls here
-	    // pass bundle.Files to it
-	    // replace bundle.Files with the output of Coffee Compiler  
-	    // now pass it to JS Minify
-	    base.Process(bundle);
-	  }
-	}
+    public class CoffeeMinify : JsMinify
+    {
+        public override void Process(BundleResponse bundle)
+        {
+            var compiler = new CoffeeScriptEngine();
+            bundle.Content = compiler.Compile(bundle.Content);
+
+            base.Process(bundle);
+        }
+    }
 	````
 
 1. Open the **Script1.coffee** and **Script2.coffee** files from the **Scripts/bundle** folder.
 
 	These files will include the CoffeScript code to be compiled while performing the bundling with the CoffeeMinify class.
 
-	For simplicity purposes, the CoffeeScript files provided are only including JavaScript and CoffeeScript code . The comments are excluded by the JsMinify process.
+	For simplicity purposes, the CoffeeScript files provided are only including CoffeeScript sample code . The comments are excluded by the JsMinify process.
 
  	![CoffeeScript files](./images/CoffeeScript-files.png?raw=true "CoffeeScript files")
  
@@ -871,9 +883,9 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 
 1. Press **F5** to run the application, and then navigate to the **Optimization** page.
 
-1. Click on the **Dynamic JS Bundle** link to download and open the file in Notepad.
+1. Click on the **Dynamic JS Bundle** link to open the generated file.
 
-	Notice that the JavaScript content that was included in this bundle only contains **.coffee** files. You can also see that the commented-out code has been removed.
+	Notice that the content that was included in this bundle only contains **.coffee** files. You can also see that the CoffeeScript code was compiled to JavaScript and the commented-out lines has been removed.
 
  	![Dynamic JS files bundle](./images/Dynamic-JS-files-bundle.png?raw=true "Dynamic JS files bundle")
  
