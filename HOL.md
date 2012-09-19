@@ -28,7 +28,7 @@ In this hands on lab, you will learn how to:
 <a name="Prerequisites" />
 ### Prerequisites ###
 
-- [Microsoft Visual Studio Express 2012 for Web](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web) or superior
+- [Microsoft Visual Studio Express 2012 for Web](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web) or superior (read [Appendix A](#AppendixA) for instructions on how to install it).
 
 - [Windows PowerShell](http://support.microsoft.com/kb/968930/) (for setup scripts - already installed on Windows 8 and Windows Server 2008 R2)
 
@@ -896,3 +896,44 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
 This lab helps you to understand what New in ASP.NET and Web Development in Visual Studio 2012 is and how to take advantage of the variety of enhancements in Visual Studio 2012. 
 
 By completing this Hands-On Lab, you have learnt how to use the new features and improvements in Visual Studio 2012 Editors for CSS, JavaScript and HTML. In addition, you have learnt how Visual Studio 2012 implements built-in bundling and minification.
+
+
+<a name="AppendixA" />
+## Appendix A: Installing Visual Studio Express 2012 for Web ##
+You can install **Microsoft Visual Studio Express 2012 for Web** or another "Express" version using the **[Microsoft Web Platform Installer](http://www.microsoft.com/web/downloads/platform.aspx)**. The following instructions guide you through the steps required to install _Visual studio Express 2012 for Web_ using _Microsoft Web Platform Installer_.
+
+1. Go to [http://go.microsoft.com/?linkid=9810169](http://go.microsoft.com/?linkid=9810169). Alternatively, if you already have installed Web Platform Installer, you can open it and search for the product "_Visual Studio Express 2012 for Web with Windows Azure SDK_".
+
+1. Click on **Install Now**. If you do not have **Web Platform Installer** you will be redirected to download and install it first.
+
+1. Once **Web Platform Installer** is open, click **Install** to start the setup.
+
+	![Install Visual Studio Express](images/install-visual-studio-express.png?raw=true "Install Visual Studio Express")
+
+ 	_Install Visual Studio Express_
+
+1. Read all the products' licenses and terms and click **I Accept** to continue.
+
+	![Accepting the license terms](images/accepting-the-license-terms.png?raw=true)
+
+	_Accepting the license terms_
+
+1. Wait until the downloading and installation process completes.
+
+	![Installation progress](images/installation-progress.png?raw=true)
+
+	_Installation progress_
+
+1. When the installation completes, click **Finish**.
+
+	![Installation completed](images/installation-completed.png?raw=true)
+
+	_Installation completed_
+
+1. Click **Exit** to close Web Platform Installer.
+
+1. To open Visual Studio Express for Web, go to the **Start** screen and start writing "**VS Express**", then click on the **VS Express for Web** tile.
+
+	![VS Express for Web tile](images/vs-express-for-web-tile.png?raw=true)
+
+	_VS Express for Web tile_
