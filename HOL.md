@@ -181,7 +181,7 @@ In this task, you will learn how to use cross-browser compatible CSS3 snippets i
 
 1. Open the **Custom.css** file located under the **Styles** folder and place the cursor inside **div.images ul li img** class definition.
 
-1. Press enter to display the IntelliSense list, type **box-shadow** and press the **TAB** key twice to insert the default shadow code snippet inside the class definition. Then, type **border-radius** and insert the code snippet. Type **15px** to set radius size and press **ENTER**.
+1. Press enter to display the IntelliSense list, type **box-shadow** and press the **TAB** key twice to insert the default shadow code snippet inside the class definition. Set the shadow values to **10px 10px 5px #888**. Then, type **border-radius** and insert the code snippet. Type **15px** to set radius size and press **ENTER**.
 
  	![Rounded corners with shadow](./images/Rounded-corners-with-shadow.png?raw=true "Rounded corners with shadow")
  
@@ -474,6 +474,8 @@ This task will introduce you to some of the new JavaScript editor features, whic
 	</script>
 	````
 
+	> **Note:** Ensure the DOCTYPE is set to XHTML5 before proceeding with the next steps.
+
 1. Edit the code and notice that IntelliSense for JavaScript includes HTML5 features, like local storage, and their inner methods.
 
  	![HTML5 JavaScript features in JavaScript](./images/HTML5-JavaScript-features-in-JavaScript.png?raw=true "HTML5 JavaScript features in JavaScript")
@@ -622,14 +624,9 @@ In this task, you will learn how to enable and reference the bundled and minifie
 
 	Notice that the new **Microsoft.Web.Optimization** namespace is commented out at the beginning of the file. Uncomment the using directive to include the bundling and minification features.
 
-	<!-- mark:7 -->
+	<!-- mark:2 -->
 	````C#
 	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Web;
-	using System.Web.Security;
-	using System.Web.SessionState;
 	using Microsoft.Web.Optimization;
 	````
 
@@ -695,7 +692,7 @@ In this task, you will learn how to enable and reference the bundled and minifie
  
 	_Bundled CSS files_
 
-1. Now click the **JS Bundle** link and open the downloaded file with Notepad. You can safely disregard the explorer warning. Notice the JavaScript files under the **custom** folder are also bundled and minified.
+1. Now click the **JS Bundle** link to open the JavaScript bundled file. You can safely disregard the explorer warning. Notice the JavaScript files under the **custom** folder are also bundled and minified.
 
  	![Bundled JavaScript files](./images/Bundled-JavaScript-files.png?raw=true "Bundled JavaScript files")
  
@@ -1011,7 +1008,7 @@ If your application makes use of SQL Server databases you will need to create a 
 
 	_SQL Database Server Dashboard_
 
-1. In the next task you will test the database connection from Visual Studio, for that reason you need to include your local IP address in the server's list of **Allowed IP Addresses**. To do that, click **Configure**, select the IP address from **Current Client IP Address** and paste it on the **Start IP Address** and **End IP Address** text boxes and click the ![add-client-ip-address-ok-button](images/add-client-ip-address-ok-button.png?raw=true) button.
+1. In the next task you will test the database connection from Visual Studio, for that reason you need to include your local IP address in the server's list of **Allowed IP Addresses**. To do that, click **Configure**, select the IP address from **Current Client IP Address** and paste it on the **Start IP Address** and **End IP Address** text boxes. Enter a name for the rule and click the ![add-client-ip-address-ok-button](images/add-client-ip-address-ok-button.png?raw=true) button.
 
 	![Adding Client IP Address](images/add-client-ip-address.png?raw=true)
 
