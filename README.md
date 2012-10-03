@@ -1,10 +1,12 @@
-﻿# What's New in ASP.NET and Web Development in Visual Studio 2012 #
+# What's New in ASP.NET and Web Development in Visual Studio 2012 #
 
 ## Hands-on Lab ##
 
 ### Introduction ###
 
-This Hands-On Lab is a step-by-step guide that is designed to help you learn more about the new features available to web developers in Visual Studio 2012. In it, you will build a complete web application using Visual Studio 2012. 
+These Hands-On Labs are sets of step-by-step guides that are designed to help you learn Visual Studio 2012, ASP.NET 4.5 WebForms and ASP.NET MVC 4. Each Lab provides instructions to guide you through the process of developing a Web application.
+
+The new version of Visual Studio introduces a number of enhancements focused on improving the experience and performance when working with Web technologies. Visual Studio Editors for CSS, JavaScript and HTML have been completely revamped to include many of the most in-demand code aids, such as IntelliSense and automatic indentation. Regarding performance, bundling and minification are now integrated as built-in features to easily reduce page load time.
 
 ### Repository Structure ###
 

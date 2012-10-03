@@ -1,5 +1,9 @@
-﻿#What's New in ASP.NET and Web Development in Visual Studio 2012#
+﻿<a name="HOLTop" />
 
+# What's New in ASP.NET and Web Development in Visual Studio 2012 #
+---
+
+<a name="Overview" />
 ## Overview ##
 
 The new version of Visual Studio introduces a number of enhancements focused on improving the experience and performance when working with Web technologies. Visual Studio Editors for CSS, JavaScript and HTML have been completely revamped to include many of the most in-demand code aids, such as IntelliSense and automatic indentation. Regarding performance, bundling and minification are now integrated as built-in features to easily reduce page load time.
@@ -47,7 +51,8 @@ This hands on lab includes the following exercises:
 
 1. [Exercise 4: Bundling and Minification](#Exercise4)
 
- 
+> **Note:** Each exercise is accompanied by an **End** folder containing the resulting solution you should obtain after completing the exercises. You can use this solution as a guide if you need additional help working through the exercises.
+
 Estimated time to complete this lab: **60 minutes**.
 
 <a name="Exercise1" />
@@ -887,6 +892,8 @@ In this example, you will learn how to use the **DynamicFolderBundle** class to 
  	![Dynamic JS files bundle](./images/Dynamic-JS-files-bundle.png?raw=true "Dynamic JS files bundle")
  
  	_Dynamic JS files bundle_
+	
+>**Note:** Additionally, you can deploy this application to Windows Azure Web Sites following [Appendix B: Publishing an ASP.NET MVC 4 Application using Web Deploy](#AppendixB).
 
 <a name="Summary" />
 ## Summary ##
